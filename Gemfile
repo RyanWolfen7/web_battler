@@ -8,6 +8,8 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem 'capybara'
 gem 'rubocop', '0.59.2'
 gem 'rspec'
+gem 'selenium-webdriver'
 gem 'sinatra'
 gem 'simplecov', require: false, group: :test
 gem 'simplecov-console', require: false, group: :test
+gem 'shotgun'
