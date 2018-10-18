@@ -23,9 +23,21 @@ class Game
   @current_turn = opponent_of(current_turn)
   end
 
+  def non_active_player
+    find_other_player
+  end
+
   private
 
   def opponent_of(the_player)
     @players.select { |player| player != the_player }.first
+  end
+
+  def find_other_player
+    if @current_turn == @players.first
+      @players.last
+    else
+      @players.first
+    end
   end
 end

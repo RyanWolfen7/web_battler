@@ -1,4 +1,4 @@
-<%= @game.player_1.name %> attacked <%= @game.player_2.name %>
+<%= @game.non_active_player.name %> attacked <%= @game.current_turn.name %>
 
 <form action="/play">
   <input type="submit" value="OK">
