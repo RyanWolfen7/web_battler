@@ -1,8 +1,7 @@
-require 'capybara'
-require 'capybara/rspec'
-require 'rspec'
-require 'features/web_helpers'
-
+# require 'capybara'
+# require 'capybara/rspec'
+# require 'rspec'
+# require 'features/web_helpers'
 def sign_in_and_play
   visit('/')
   fill_in :player_1_name, with: 'Dave'
